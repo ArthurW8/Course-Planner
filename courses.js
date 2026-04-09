@@ -2,59 +2,52 @@ const courses = [
 {
   id:"COMP 110",
   name: "Introduction to Programming",
-  credit: 3,
+  credits: 3,
   prereq: ["Math 130"],
-  gen_ed: ["FC-QUANT"],
 },
 {
-  id: "Comp 210",
+  id: "COMP 210",
   name: "Data Structures and Analysis",
-  credit: 3,
+  credits: 3,
   prereq: ["COMP 110"],
-  gen_ed: [],
 },
 {
   id: "COMP 211",
   name: "Systems Fundamentals.",
-  credit: 3,
+  credits: 3,
   prereq: ["COMP 210"],
-  gen_ed: [],
 },
 {
   id: "COMP 301",
   name: "Foundations of Programming",
-  credit: 3,
+  credits: 3,
   prereq:["COMP 210"],
-  gen_ed: [],
 },
 {
   id: "MATH 231",
   name: "Calculus of Functions of One Variable I",
-  credit: 4,
+  credits: 4,
   prereq: ["MATH 110"],
-  gen_ed: ["FY-LAUNCH (only designated sections)", "FC-QUANT"],
 },
 {
   id: "MATH 232",
   name: "Calculus of Functions of One Variable II",
-  credit: 4,
+  credits: 4,
   prereq: ["MATH 231"],
-  gen_ed: ["FC-QUANT"],
 },
 {
   id: "MATH 233",
   name: "Calculus of Functions of Several Variables",
-  credit: 4,
+  credits: 4,
   prereq: ["MATH 232"],
-  gen_ed: ["FC-QUANT"],
 },
 {
   id: "MATH 381",
   name: "Discrete Mathematics",
-  credit: 3,
+  credits: 3,
   prereq: ["MATH 231"],
-  gen_ed: [],
 }
+
 ];
 function canTake(courseID, completedCourse){
   const course = courses.find(c => c.id === courseID);
